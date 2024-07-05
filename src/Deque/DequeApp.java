@@ -11,18 +11,18 @@ public class DequeApp {
 
         System.out.println(stack);
 
-        stack.offerLast("Eko");
-        stack.offerLast("Kurniawan");
-        stack.offerLast("Khannedy");
+        stack.offerLast("Audy");
+        stack.offerLast("Ari");
+        stack.offerLast("Wiyono");
 
         System.out.println(stack.pollLast());
         System.out.println(stack.pollLast());
         System.out.println(stack.pollLast());
 
         Deque<String> queue = new LinkedList<>();
-        queue.offerLast("Eko");
-        queue.offerLast("Kurniawan");
-        queue.offerLast("Khannedy");
+        queue.offerLast("Audy");
+        queue.offerLast("Ari");
+        queue.offerLast("Wiyono");
 
         System.out.println(queue.pollFirst());
         System.out.println(queue.pollFirst());
