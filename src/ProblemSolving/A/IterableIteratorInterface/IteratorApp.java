@@ -1,4 +1,4 @@
-package A.IterableIteratorInterface;
+package ProblemSolving.A.IterableIteratorInterface;
 
 import java.util.Iterator;
 import java.util.List;
