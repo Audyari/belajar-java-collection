@@ -1,4 +1,4 @@
-package ProblemSolving.D.ImmutableList.Data;
+package ProblemSolving.G.ImplementasiSortedSet.DATA;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,27 +10,22 @@ public class Person {
 
     private List<String> hobbies;
 
-
     public Person(String name) {
         this.name = name;
         this.hobbies = new ArrayList<>();
     }
 
-    public void addHobby(String hobby){
 
+
+    public void addHobby(String hobby){
         hobbies.add(hobby);
     }
 
-    public List<String> getHobbies() {
-
-        // Problem nya dapat di injek ubah jadi :
-        // return hobbies;
+    public List<String> getHobbies(){
         return Collections.unmodifiableList(hobbies);
     }
 
-     public String getName() {
+    public String getName() {
         return name;
     }
-
-
 }
