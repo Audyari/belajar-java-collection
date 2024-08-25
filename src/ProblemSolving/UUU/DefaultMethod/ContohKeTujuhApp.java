@@ -2,6 +2,7 @@ package ProblemSolving.UUU.DefaultMethod;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.BiConsumer;
 
 public class ContohKeTujuhApp {
 
@@ -22,6 +23,16 @@ public class ContohKeTujuhApp {
         scores.forEach((key, value) -> {
             System.out.println("Key: " + key + ", Value: " + value);
         });
+
+        System.out.println("");
+
+        scores.forEach(new BiConsumer<String, Integer>() {
+            @Override
+            public void accept(String key, Integer value) {
+                System.out.println("Key: " + key + ", Value: " + value);
+            }
+        };
+
 
         // Output:
         // Key: Alice, Value: 90
